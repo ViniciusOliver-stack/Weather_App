@@ -1,0 +1,67 @@
+.container{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.input_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inputCity{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: .8rem;
+    background-color: #2f3542;
+    color: white;
+}
+.inputCity::placeholder{
+    color: white;
+    font-weight: 500;
+}
+
+.button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .8rem;
+    font-weight: 500;
+    transition: .4s ease;
+    background-color: #2f3542;
+    color: white;
+}
+.button:hover{
+    color: rgba(255, 255, 255, .5);
+}
+
+@media (min-width: 320px) and (max-width: 475px){
+    .input_container{
+        flex-direction: column;
+    }
+
+    .inputCity, .inputCountry{
+        padding: .5rem;
+    }
+    
+}
+
+@media (min-width: 476px) and (max-width: 768px){
+    .input_container{
+        flex-flow: wrap;
+    }
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
+    .inputCity, .inputCountry{
+        padding: .5rem;
+    }
+    
+}
